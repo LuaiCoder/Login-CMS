@@ -31,19 +31,28 @@ const Login = () => {
     <div>
       <form onSubmit={handleLogin}>
         <h3>Login</h3>
+        <div className="mb-3"></div>
         <input
           type="text"
+          className="form-control"
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <div className="mb-3"></div>
         <input
           type="password"
+          className="form-control"
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Log in</button>
+        <div class="space"></div>
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+          Sign In with me
+          </button>
+        </div>
       </form>
     </div>
   );
